@@ -1,0 +1,47 @@
+:root {
+    --green: #84ff3d;
+    --blue: #2eabff;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+h1, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(204 100% 5%);
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: min(200%, 5vmin);
+}
+
+article {
+    background: linear-gradient(
+        to right, 
+        var(--green),
+        var(--blue) 
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Baloo 2', cursive;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Dank Mono", ui-monospace, monospace;
+    padding: 0px 20px;
+}
