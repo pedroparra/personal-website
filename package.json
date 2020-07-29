@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p && cp CNAME public"
+    "start": "rm -rf build && mkdir build && cp -r src/public build/public && webpack -w",
+    "build": "webpack -p && cp CNAME build && cp -r src/public build/public"
   },
   "repository": {
     "type": "git",

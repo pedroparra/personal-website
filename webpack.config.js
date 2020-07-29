@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const SOURCE = path.resolve(__dirname, 'src');
-const OUTPUT = path.resolve(__dirname, 'public');
+const OUTPUT = path.resolve(__dirname, 'build');
 
 module.exports = {
     entry: [
