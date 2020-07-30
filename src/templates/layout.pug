@@ -1,10 +1,11 @@
 doctype html
-head(lang='en')
-  include includes/head.pug
-  //- Include CSS before closing head tag
-  each css in htmlWebpackPlugin.files.css
-    link(href=css, rel='stylesheet')
-body
-  block content
-  each js in htmlWebpackPlugin.files.js
-    script(type='text/javascript', src=js)
+html(class='ola')
+  head(lang='en')
+    include includes/head.pug
+    //- Include CSS before closing head tag
+    each css in htmlWebpackPlugin.files.css
+      link(href=css, rel='stylesheet')
+  body
+    block content
+    each js in htmlWebpackPlugin.files.js
+      script(type='text/javascript', src=js)
