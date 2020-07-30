@@ -40,6 +40,43 @@ p {
 
 .intro {
     background-color: white;
-    background-image: url("./public/background.png");
+    background-image: url("./public/images/background.png");
+    background-repeat: no-repeat;
+    background-position: 140% center;
     border-radius: 20px;
+}
+
+@media (max-width: 575.98px) {
+    .intro {
+        background-image: none;
+        border-radius: 0px;
+    }
+}  
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .intro {
+        background-position: -110% center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .intro {
+        background-position: -500% center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .intro {
+        background-position: 300% center;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+    .intro {
+        background-position: 150% center;
+    }
 }
