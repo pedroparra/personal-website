@@ -9,6 +9,7 @@ window.onload = function() {
         new TxtRotate(elements[i], JSON.parse(toRotate), period);
       }
     }
+
     // INJECT CSS
     const css = document.createElement("style");
     css.type = "text/css";
