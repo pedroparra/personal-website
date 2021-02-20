@@ -161,6 +161,7 @@ window.onload = function() {
         new textRotate(elements[i], JSON.parse(toRotate), period);
       }
     }
+
     // INJECT CSS
     const css = document.createElement("style");
     css.type = "text/css";
